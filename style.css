@@ -500,7 +500,7 @@ body{
 
     align-items:flex-end;
 
-    gap:20px;
+    gap:100px;
 
     margin-top:40px;
 }
@@ -843,6 +843,29 @@ body{
 /* TRANSITION PAGE */
 /* ===================================== */
 
+#transitionPage{
+
+    background:black;
+}
+
+.transitionContent{
+
+    color:white;
+
+    text-align:center;
+}
+
+.transitionContent h1{
+
+    font-size:70px;
+
+    font-weight:300;
+
+    text-shadow:
+    0 0 15px white,
+    0 0 40px white;
+}
+
 /* ===================================== */
 /* PAGE 4 */
 /* ===================================== */
@@ -913,6 +936,139 @@ body{
     .transitionContent h1{
 
         font-size:40px;
+    }
+
+}
+/* ===================================== */
+/* MOBILE FIX */
+/* ===================================== */
+
+@media screen and (max-width:480px){
+
+    html,
+    body{
+
+        width:100vw;
+        height:100vh;
+
+        overflow:hidden;
+    }
+
+    .page{
+
+        width:100vw;
+        height:100vh;
+    }
+
+    /* PAGE 1 */
+
+    #envelope{
+
+        width:min(65vw,280px);
+    }
+
+    .glowText{
+
+        font-size:20px;
+    }
+
+    #tapCounter{
+
+        font-size:16px;
+    }
+
+    /* PAGE 2 */
+
+    .password-title{
+
+        font-size:20px;
+
+        letter-spacing:4px;
+    }
+
+    .password-boxes{
+
+        gap:10px;
+    }
+
+    .pw-box{
+
+        width:55px;
+        height:55px;
+
+        font-size:24px;
+    }
+
+    #enterBtn{
+
+        font-size:18px;
+
+        padding:
+        12px
+        40px;
+    }
+
+    /* PAGE 3 */
+
+    .birthdayWrapper{
+
+        gap:20px;
+
+        transform:
+        scale(.75);
+    }
+
+    .messageBox{
+
+        width:90%;
+
+        font-size:15px;
+
+        line-height:1.7;
+
+        margin-top:15px;
+    }
+
+    .musicArea{
+
+        margin-top:20px;
+    }
+
+    #musicBtn{
+
+        font-size:16px;
+
+        padding:
+        14px
+        24px;
+    }
+
+    #countdownText{
+
+        font-size:14px;
+    }
+
+    /* VIDEO */
+
+    #birthdayVideo{
+
+        width:100vw;
+        height:100vh;
+
+        object-fit:cover;
+    }
+
+}@media screen and (max-width:480px){
+
+    body{
+
+        transform:scale(.65);
+
+        transform-origin:
+        top center;
+
+        width:154%;
+        height:154%;
     }
 
 }
