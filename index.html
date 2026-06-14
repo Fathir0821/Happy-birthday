@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===================================== -->
+<!-- PAGE 1 -->
+<!-- ===================================== -->
+
+<section id="page1" class="page active">
+
+    <div class="page1-content">
+
+        <img
+            src="envelope.png"
+            id="envelope"
+            alt="Envelope"
+        >
+
+        <h1 class="glowText">
+            Tekan 15x untuk membuka
+        </h1>
+
+        <div id="tapCounter">
+            0 / 15
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- PAGE 2 -->
+<!-- ===================================== -->
+
+<section id="page2" class="page">
+
+    <div class="password-container">
+
+        <h1 class="password-title">
+            PASWORD NYA APA? 🤭
+        </h1>
+
+        <div class="password-boxes">
+
+            <input type="password" maxlength="1" class="pw-box">
+            <input type="password" maxlength="1" class="pw-box">
+            <input type="password" maxlength="1" class="pw-box">
+            <input type="password" maxlength="1" class="pw-box">
+            <input type="password" maxlength="1" class="pw-box">
+
+        </div>
+
+        <button id="enterBtn">
+
+            Enter
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- POPUP -->
+<!-- ===================================== -->
+
+<div id="popupOverlay">
+
+    <div id="popupBox">
+
+        <div id="popupText">
+
+            maaf, anda bukan orangnya
+
+        </div>
+
+        <button id="closePopup">
+
+            OK
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ===================================== -->
+<!-- PAGE 3 -->
+<!-- ===================================== -->
+
+<section id="page3" class="page">
+
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div id="balloonContainer"></div>
+
+    <div class="birthdayWrapper">
+
+        <!-- KUE -->
+
+        <div class="cakeSection">
+
+            <div class="cake">
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+                <div class="cake-layer layer1"></div>
+                <div class="cake-layer layer2"></div>
+                <div class="cake-layer layer3"></div>
+
+            </div>
+
+        </div>
+
+        <!-- KADO -->
+
+        <div class="giftSection">
+
+            <div class="gift">
+
+                <div class="giftLid"></div>
+
+                <div class="giftBody"></div>
+
+                <div class="giftRibbonV"></div>
+
+                <div class="giftRibbonH"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PESAN -->
+
+    <div class="messageBox">
+
+        <p>
+
+            Hbd bro, kita sudah sama-sama
+            menginjak umur 15.
+
+            Umur 15 secara biologis masih
+            termasuk fase remaja, tapi aku
+            yakin pikiran kita sudah mau
+            menginjak fase dewasa.
+
+            Umur 15 bukan waktu untuk
+            main-main lagi, kita sudah
+            semakin dekat dengan kedewasaan.
+
+            Semoga ulang tahunmu kali ini
+            menjadi awal dari sebuah
+            perjalanan yang akan membawa
+            mu ke dalam kebahagiaan yang
+            tak pernah berakhir.
+
+            Masa depan bukan ditentukan
+            dari umur, tapi dari seberapa
+            cepat kita menyadari bahwa
+            masa depan yang cerah dimulai
+            dari hal baik yang kita lakukan
+            sedini mungkin.
+
+        </p>
+
+    </div>
+
+
+    <!-- TOMBOL -->
+
+    <div class="musicArea">
+
+        <button
+            id="musicBtn"
+            disabled>
+
+            ▶ Play your favorite music
+
+        </button>
+
+        <div id="countdownText">
+
+            Tombol akan aktif dalam 60 detik
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- PAGE 4 -->
+<!-- ===================================== -->
+
+<section id="page4" class="page">
+
+    <video
+        id="birthdayVideo"
+        controls
+        playsinline
+        preload="auto"
+    >
+
+        <source
+            src="video.mp4"
+            type="video/mp4">
+
+    </video>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
